@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html> <body>
+
+<h2>Pagamento</h2>
+
+<form name="Formulario" action="" method="post">
+
+  <label for="Nome">Digite seu nome:</label><br>
+  <input type="text" id="NomeC" name="NomeC" value=""><br>
+  
+  <label for="Email">Digite seu Email:</label><br>
+  <input type="email" id="email" name="email" value=""><br>
+  
+  <label for="CPF">Digitw seu CPF:</label><br>
+  <input type="text" id="cpf" name="cpf" value=""><br>
+  
+  <label for="Pagamento">Indique a forma de pagamento:</label><br>
+  
+  <input type="radio" id="Pag" name="pagar" value="Pix">
+  <label for="Forma_pagamento">Pix</label><br>
+  
+  <input type="radio" id="Pag" name="pagar" value="Boleto">
+  <label for="Forma_pagamento">Boleto</label><br>
+  
+  <input type="radio" id="Pag" name="pagar" value="Cartão">
+  <label for="Forma_pagamento">Cartão</label><br>
+  
+  <input type="submit" value="Enviar" onclick="mensagem()">
+</form> 
+
+<script>
+    var Nome;
+    function mensagem() {
+        Nome = document.Formulario.NomeC.value;
+        window.alert('Olá ' + Nome + ', operação realizada com sucesso! Seja bem-vindo(a)');
+    }
+</script>
+
+</body></html>
