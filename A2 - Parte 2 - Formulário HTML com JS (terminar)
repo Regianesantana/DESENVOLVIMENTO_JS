@@ -25,7 +25,7 @@
   <input type="radio" id="Pag" name="pagar" value="Cartão">
   <label for="Forma_pagamento">Cartão</label><br>
   
-  <input type="submit" value="Enviar" onclick="mensagem()">
+  <input type="submit" value="Enviar" onclick="validacao()">
 </form> 
 
 <script>
