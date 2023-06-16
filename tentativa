@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html> <body>
+
+<h2>PAGAMENTO</h2>
+
+<form name="Formulario" action="" method="post">
+
+  <label for="Nome">Digite seu nome:</label><br>
+  <input type="text" id="NomeC" name="NomeC" value=""><br>
+
+  <label for="Email">Digite seu Email:</label><br>
+  <input type="email" id="email" name="email" value=""  ><br>
+  
+  <label for="CPF">Digite seu CPF:</label><br>
+  <input type="text" id="cpf" name="cpf" value="" maxlength="14"  pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" ><br>
+  
+<label for="Pagamento">Indique a forma de pagamento:</label><br>
+  
+  <input type="radio" id="Pag" name="pagar" value="Pix">
+  <label for="Forma_pagamento">Pix</label><br>
+  
+  <input type="radio" id="Pag" name="pagar" value="Boleto">
+  <label for="Forma_pagamento">Boleto</label><br>
+  
+  <input type="radio" id="Pag" name="pagar" value="Cartão">
+  <label for="Forma_pagamento">Cartão</label><br>
+  
+  <input type="submit" value="Enviar" onclick="validacao()">
+</form> 
+
+<script>
+    var Nome;
+    var PessoaFisica;
+
+    function validacao() {
+        Nome = document.Formulario.NomeC.value;
+        PessoaFisica = document.Formulario.cpf.value;
+
+        if (Nome.length > 30) {
+            window.alert("Nome inválido! Caracteres excedidos");
+
+    }
+      } else  window.alert('Olá ' + Nome + ', operação realizada com sucesso! Seja bem-vindo(a)'); {
+        }
+
+
+</script>
+</body></html>
