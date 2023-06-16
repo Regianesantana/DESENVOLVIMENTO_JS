@@ -1,0 +1,23 @@
+function validarEmail(email) {
+  // Expressão regular para validar o email
+  var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  // Verificar se o email está no formato correto
+  if (regex.test(email)) {
+    // Verificar se existe apenas um @ no email
+    var count = (email.match(/@/g) || []).length;
+    if (count === 1) {
+      // Verificar se o @ não é o primeiro nem o último caractere
+      if (email.indexOf('@') !== 0 && email.indexOf('@') !== email.length - 1) {
+        return true; // Email válido
+      }
+    }
+  }
+
+  return false; // Email inválido
+}
+
+// Exemplo de uso
+var email = 'example@example.com';
+var valido = validarEmail(email);
+console.log(valido); // true
