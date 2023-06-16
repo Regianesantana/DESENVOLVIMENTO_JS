@@ -21,3 +21,10 @@ function validarEmail(email) {
 var email = 'example@example.com';
 var valido = validarEmail(email);
 console.log(valido); // true
+
+
+
+     pattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+
+        if(document.Formulario.email.value=="" || document.Formulario.email.value.indexOf('@') == -1 || document.Formulario.email.value.indexOf('.')  == -1 );
